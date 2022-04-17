@@ -7,12 +7,29 @@
   <title>Palloncino's web app</title>
 </head>
 <body>
-  
-  <input type="text" name="prop-1-key" id="prop-1-key">
-  <input type="text" name="prop-1-val" id="prop-1-val">
-  <button id="prop-1-button">submit</button>
 
-  <button id="state-logger">state logger</button>
+  <style>
+    * {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+  </style>
+
+  <div id="header">
+    <h3>Palloncino's web app</h3>
+    <p>Override the state by using the form</p>
+    <p>Open console and push logger to check state changes</p>
+  </div>
+  
+  <div id="form">
+    <input type="text" name="prop-1-key" id="prop-1-key">
+    <input type="text" name="prop-1-val" id="prop-1-val">
+    <button id="prop-1-button">submit</button>
+    <button id="state-logger">state logger</button>
+  </div>
+
+  <hr>
+
+  <div style="background:rgba(255, 0, 0, 0.1);" id="main" />
 
   <script src="./index.js" type="module" />
 </body>
